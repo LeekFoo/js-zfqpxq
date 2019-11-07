@@ -5,19 +5,21 @@ body {
   font-family: 'M PLUS 1p', ‘ヒラギノ角ゴシック’, ‘メイリオ’ , sans-serif;
 }
 
-/**** nav_bar ****/
-
-nav {
+#scroll_top {
   position: fixed;
-  width: 100%;
+  display: block;
+  right:20px;
+  bottom:20px;
+  background: #313131b3;
+  color: #fff;
+  padding:20px;
+  border-radius: 50%;
 }
+
+/**** nav_bar ****/
 
 .nav_bar nav {
   padding-right: 25px;
-}
-
-.nav_bar nav ul {
-    list-style-type: none;
 }
 
 .nav_bar nav li {
@@ -36,5 +38,31 @@ nav {
   margin-bottom: 50px;
 }
 
+/**** profile ****/
+
+  #about {
+    background-color: rgba(1, 1, 1, 0.25);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+.profile_image {
+  float: left;
+  min-width: 100px;
+  min-height: 100px;
+  margin-right: 10px;
+}
+
+#profile p {
+  overflow: hidden;
+}
+
+/**** contact ****/
+
+#contact {
+  padding: 10px 0;
+  color: #ffffff;
+}
 
 
