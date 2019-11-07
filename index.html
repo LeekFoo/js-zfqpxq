@@ -6,48 +6,39 @@
 	<title>LeekFoo's Portfolio</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" type="text/css">
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script type="text/javascript">
-		document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems, options);
-    });
-
-    $( document ).ready(function() {
-      $(".dropdown-trigger").dropdown();
-      $('.sidenav').sidenav();
-    });
-	</script>
 </head>
 
 <body>
 	<header>
 		<div class="navbar-fixed nav_bar">
-			<nav class="nav-wrapper cyan lighten-2">
-				<a href="#" class="brand-logo">Logo</a>
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="#">TOP</a></li>
-					<li><a href="#about">このサイトについて</a></li>
-					<li>経歴</li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown</a></li>
-				</ul>
-				<ul id="dropdown1" class="dropdown-content">
-					<li><a href="#!">one</a></li>
-					<li><a href="#!">two</a></li>
-					<li class="divider"></li>
-					<li><a href="#!">three</a></li>
-				</ul>
-			</nav>
+        <nav class="">
+          <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">TOP</a></li>
+              <li><a href="#about">このサイトについて</a></li>
+              <li class="dropdown">
+                <a href="#portfolio">ポートフォリオ</a>
+                <ul id="dropdown1" class="dropdown-list">
+                  <li><a href="#!">one</a></li>
+                  <li><a href="#!">two</a></li>
+                  <li><a href="#!">three</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown</a></li>
+            </ul>
+          </div>
+        </nav>
 		</div>
       <ul class="sidenav" id="mobile-demo">
         <li><a href="#">TOP</a></li>
         <li><a href="#about">このサイトについて</a></li>
-        <li>経歴</li>
+        <li><a href="#portfolio">ポートフォリオ</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown</a></li>
       </ul>
@@ -56,13 +47,13 @@
   <article>
     <div id="top_title" class="valign-wrapper led teal lighten-3">
       <div class="container">
-        <div class="row center">
+        <div class="row center" data-aos="fade-up">
           <h1>LeekFoo's Portfolio</h1>
           <h5>Web Engeneer</h5>
         </div>
       </div>
     </div>
-    <div id="about">
+    <div id="about" data-aos="fade-in">
       <div class="container">
         <div class="row">
           <div id="image"></div>
@@ -82,8 +73,10 @@
         </div>
       </div>
     </div>
-    <div id="skill">
-      <div class="container"></div>
+    <div id="portfolio">
+      <div class="container">
+        <h3>スキルセット</h3>
+      </div>
     </div>
     <div id="contact" class="teal lighten-3">
       <div class="container">
@@ -98,5 +91,20 @@
     </div>
   </article>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript">
+    AOS.init();
 
+		document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, options);
+    });
+
+    $( document ).ready(function() {
+      // $(".dropdown-trigger").dropdown();
+      $('.sidenav').sidenav();
+    });
+</script>
 </html>
