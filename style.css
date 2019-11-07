@@ -1,3 +1,40 @@
-h1, h2 {
-  font-family: Lato;
+
+/**** Common ****/
+
+body {
+  font-family: 'M PLUS 1p', ‘ヒラギノ角ゴシック’, ‘メイリオ’ , sans-serif;
 }
+
+/**** nav_bar ****/
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+.nav_bar nav {
+  padding-right: 25px;
+}
+
+.nav_bar nav ul {
+    list-style-type: none;
+}
+
+.nav_bar nav li {
+  float: left;
+  margin-left: 5px;
+}
+
+/**** top_title ****/
+
+#top_title {
+  height: calc(100vh);
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+
+

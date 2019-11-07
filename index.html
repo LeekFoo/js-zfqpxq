@@ -1,80 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>LeekFoo&nbsp;のポートフォリオ</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
+	<meta charset="UTF-8">
+	<title>LeekFoo&nbsp;のポートフォリオ</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
+
 <body>
-    <div class="top_title">
-        <div>LeekFoo&nbsp;のポートフォリオ</div>
-        <div>Webエンジニア</div>
+  <header>
+    <div class="nav_bar">
+      <nav class="cyan lighten-2">
+        <ul class="right">
+          <li><a href="#">TOP</a></li>
+          <li><a href="#about">このサイトについて</a></li>
+          <li>経歴</li>
+          <li><a href="#contact">連絡先</a></li>
+        </ul>
+      </nav>
+    <div>
+  </header>
+
+	<div id="top_title" class="valign-wrapper led teal lighten-3">
+    <div class="container">
+      <div class="row center">
+        <h1>LeekFoo's Portfolio</h1>
+        <h5>Web Engeneer</h5>
+      </div>
     </div>
-    <div id="profile" class="contents">
-        <div id="image"></div>
-        <div id="description">
-            <h3>自己紹介</h3>
-            <p>
-                LeekFooと申します。<br>
+	</div>
+	<div id="about" class="contents">
+		<div id="image"></div>
+		<div id="description">
+			<h3>自己紹介</h3>
+			<p>
+				LeekFooと申します。<br>
                 これまで約3年間Web業界でサーバーエンジニアとして勤務し、LAMP環境で動作するWebアプリケーションやソーシャルゲームの開発を行ってきました。<br>
                 仕事上ではPHPを使用することが多いですが、最近は競技プログラミングを始め、C++の勉強もしています。
             </p>
-        </div>
-        <div id="skill">
-            <h3><i class="fas fa-user-cog"></i>スキルセット</h3>
-            <h4>言語</h4>
-            <dl>
-                <dt><i class="fab fa-php"></i>PHP</dt>
-                <dd></dd>
-                <dt><i class="fab fa-html5"></i>HTML</dt>
-                <dd></dd>
-                <dt><i class="fab fa-css3-alt"></i>CSS</dt>
-                <dd></dd>
-                <dt><i class="fab fa-js-square"></i>javascript</dt>
-                <dd></dd>
-            </dl>
-            <h4>FW・ライブラリ</h4>
-            <dl>
-                <dt><i class="fab fa-php"></i>Zend Framework</dt>
-                <dd></dd>
-                <dt><i class="fab fa-html5"></i>Symfony</dt>
-                <dd></dd>
-                <dt><i class="fab fa-css3-alt"></i>Laravel</dt>
-                <dd></dd>
-                <dt><i class="fab fa-js-square"></i>Bootstrap</dt>
-                <dd></dd>
-                <dt><i class="fab fa-js-square"></i>jQuery</dt>
-                <dd></dd>
-            </dl>
-            <h4>開発環境</h4>
-            <dl>
-                <dt><i class="fab fa-php"></i>Apache</dt>
-                <dd></dd>
-                <dt><i class="fab fa-docker"></i>Docker</dt>
-                <dd></dd>
-            </dl>
-            <h4>その他</h4>
-            <dl>
-                <dt><i class="fab fa-php"></i>MySQL</dt>
-                <dd></dd>
-                <dt><i class="fab fa-aws"></i>AWS</dt>
-                <dd></dd>
-                <dt><i class="fab fa-html5"></i>EC-CUBE</dt>
-                <dd></dd>
-            </dl>
-        </div>
-        <div id="past_work">
-            <h3><i class="fas fa-code"></i>実績</h3>
-        </div>
-    </div>
-    <div id="contact">
-        <h3><i class="fas fa-paper-plane"></i>連絡先</h3>
-        <p>
-            negi.44193<i class="fas fa-at"></i>gmail.com
-        </p>
-    </div>
+		</div>
+		<div id="skill">
+			<h3><i class="fas fa-user-cog"></i>スキルセット</h3>
+			<h4>言語</h4>
+			<dl>
+				<dt><i class="fab fa-php"></i>PHP</dt>
+				<dd></dd>
+				<dt><i class="fab fa-html5"></i>HTML</dt>
+				<dd></dd>
+				<dt><i class="fab fa-css3-alt"></i>CSS</dt>
+				<dd></dd>
+				<dt><i class="fab fa-js-square"></i>javascript</dt>
+				<dd></dd>
+			</dl>
+			<h4>FW・ライブラリ</h4>
+			<dl>
+				<dt><i class="fab fa-php"></i>Zend Framework</dt>
+				<dd></dd>
+				<dt><i class="fab fa-html5"></i>Symfony</dt>
+				<dd></dd>
+				<dt><i class="fab fa-css3-alt"></i>Laravel</dt>
+				<dd></dd>
+				<dt><i class="fab fa-js-square"></i>Bootstrap</dt>
+				<dd></dd>
+				<dt><i class="fab fa-js-square"></i>jQuery</dt>
+				<dd></dd>
+			</dl>
+			<h4>開発環境</h4>
+			<dl>
+				<dt><i class="fab fa-php"></i>Apache</dt>
+				<dd></dd>
+				<dt><i class="fab fa-docker"></i>Docker</dt>
+				<dd></dd>
+			</dl>
+			<h4>その他</h4>
+			<dl>
+				<dt><i class="fab fa-php"></i>MySQL</dt>
+				<dd></dd>
+				<dt><i class="fab fa-aws"></i>AWS</dt>
+				<dd></dd>
+				<dt><i class="fab fa-html5"></i>EC-CUBE</dt>
+				<dd></dd>
+			</dl>
+		</div>
+		<div id="past_work">
+			<h3><i class="fas fa-code"></i>実績</h3>
+		</div>
+	</div>
+	<div id="contact">
+		<h3><i class="fas fa-paper-plane"></i>連絡先</h3>
+		<p>
+			negi.44193<i class="fas fa-at"></i>gmail.com
+		</p>
+	</div>
 </body>
+
 </html>
