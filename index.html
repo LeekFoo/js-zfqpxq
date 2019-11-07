@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -30,22 +31,29 @@
                 </ul>
               </li>
               <li><a href="#contact">Contact</a></li>
-              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown</a></li>
             </ul>
           </div>
         </nav>
 		</div>
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">TOP</a></li>
-        <li><a href="#about">このサイトについて</a></li>
-        <li><a href="#portfolio">ポートフォリオ</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown</a></li>
-      </ul>
+    <ul class="sidenav collapsible" id="mobile-demo">
+      <li><a href="#">TOP</a></li>
+      <li><a href="#about">このサイトについて</a></li>
+      <li>
+        <a class="collapsible-header">ポートフォリオ<i class="material-icons right">arrow_drop_down</i></a>
+        <div class="collapsible-body">
+            <ul>
+              <li><a href="#">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li><a href="#!">three</a></li>
+            </ul>
+        </div>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 	</header>
 
   <article>
-    <div id="top_title" class="valign-wrapper led teal lighten-3">
+    <div id="top_title" class="valign-wrapper teal lighten-3">
       <div class="container">
         <div class="row center" data-aos="fade-up">
           <h1>LeekFoo's Portfolio</h1>
@@ -53,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div id="about" data-aos="fade-in">
+    <div id="about" class="section valign-wrapper" data-aos="fade-in">
       <div class="container">
         <div class="row">
           <div id="image"></div>
@@ -73,12 +81,12 @@
         </div>
       </div>
     </div>
-    <div id="portfolio">
+    <div id="portfolio" class="section valign-wrapper">
       <div class="container">
         <h3>スキルセット</h3>
       </div>
     </div>
-    <div id="contact" class="teal lighten-3">
+    <div id="contact" class="section valign-wrapper teal lighten-3">
       <div class="container">
         <h3><i class="fas fa-paper-plane"></i>連絡先</h3>
         <p>
@@ -97,14 +105,9 @@
   <script type="text/javascript">
     AOS.init();
 
-		document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems, options);
-    });
-
     $( document ).ready(function() {
-      // $(".dropdown-trigger").dropdown();
       $('.sidenav').sidenav();
+      $('.collapsible').collapsible();
     });
 </script>
 </html>

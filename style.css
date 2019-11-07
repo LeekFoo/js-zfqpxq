@@ -67,10 +67,22 @@ nav ul .dropdown-list a {
   color: #000;
 }
 
+ul.sidenav {
+  padding-top: 20px;
+}
+
+.sidenav .collapsible-header {
+  padding: 0 32px;
+}
+
+.sidenav .collapsible-body li a {
+  padding-left: 52px;
+}
+
 /**** top_title ****/
 
 #top_title {
-  height: calc(100vh);
+  height: calc(100vh - 64px);
   font-weight: bold;
   font-size: 20px;
   font-size: 2rem;
