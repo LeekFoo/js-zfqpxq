@@ -30,6 +30,18 @@ body {
     border-radius: 5px;
 }
 
+#skill_set_content .frontend_skill .skill_bar {
+    background-color: #ff0000;
+}
+
+#skill_set_content .backend_skill .skill_bar {
+    background-color: #00ff00;
+}
+
+#skill_set_content .other_skill .skill_bar {
+    background-color: #1100ff;
+}
+
 /**** nav_bar ****/
 
 nav {
@@ -132,6 +144,9 @@ ul.sidenav {
   color: #ffffff;
 }
 
+#contact form label {
+    color: #fff;
+}
 
 @media screen and (max-width:768px) {
     #profile_image {
