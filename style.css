@@ -27,8 +27,6 @@ nav .brand-logo {
   color: #000;
 }
 
-
-
 .nav_bar nav li {
   float: left;
 }
@@ -93,17 +91,20 @@ ul.sidenav {
 /**** profile ****/
 
   #about {
-    background-color: rgba(1, 1, 1, 0.25);
-    padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
+    background-color: rgba(1, 1, 1, 0.5);
+    padding: 20px 10px;
+    /* margin: 20px; */
+    /* border-radius: 5px; */
   }
 
-.profile_image {
-  float: left;
+#profile_image {
+    float: left;
+    margin-right: 10px;
+}
+
+#profile_image img {
   min-width: 100px;
   min-height: 100px;
-  margin-right: 10px;
 }
 
 #profile p {
@@ -118,3 +119,18 @@ ul.sidenav {
 }
 
 
+@media screen and (max-width:768px) {
+    #profile_image {
+        text-align: center;
+        float: none;
+        margin-right: 0;
+    }
+
+    #profile p {
+        overflow: inherit;
+    }
+
+    #skill_set_content canvas {
+        min-height: 150px;
+    }
+}
