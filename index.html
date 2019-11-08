@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
@@ -86,6 +86,12 @@
                     <h3 class="center-align">スキルセット</h3>
                     <div class="row">
                         <div class="frontend_skill col s12 m4">
+                            <div class="row skill">
+                                <div class="skill_name col s2 offset-s1">PHP</div>
+                                <div class="skill_bar_wrap col s8">
+                                    <div class="skill_bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
                             <canvas class="frontend_graph"></canvas>
                         </div>
                         <div class="backend_skill col s12 m4">
@@ -139,73 +145,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-<script type="text/javascript">
-	AOS.init({
-        offset: 300,
-        duration: 1000,
-    });
-
-    var options = {
-        responsive: true,
-        title: {
-            display: true,
-            text: 'フロントエンド'
-        },
-        legend: {
-            display: false
-        },
-        scale: {
-            angleLines: {
-                display: false
-            },
-            ticks: {
-                suggestedMin: 1,
-                suggestedMax: 5
-            }
-        }
-    };
-
-    $( document ).ready(function() {
-        $('.sidenav').sidenav();
-        $('.collapsible').collapsible();
-
-        var frontendChart = new Chart($('.frontend_graph'), {
-            type: 'radar',
-            data: {
-                labels: ['HTML/CSS', 'Javascript', 'jQuery', 'Angular', 'Bootstrap'],
-                datasets: [{
-                    data: [4, 3, 4, 2, 2]
-                }]
-            },
-            options: options
-        });
-
-        options['title']['text'] = 'バックエンド';
-
-        var backendChart = new Chart($('.backend_graph'), {
-            type: 'radar',
-            data: {
-                labels: ['PHP', 'MySQL', 'PostgleSQL'],
-                datasets: [{
-                    data: [4, 3, 4]
-                }]
-            },
-            options: options
-        });
-
-        options['title']['text'] = 'その他';
-
-        var otherChart = new Chart($('.other_graph'), {
-            type: 'radar',
-            data: {
-                labels: ['Linux', 'Git', 'Apache', 'AWS', 'Photoshop'],
-                datasets: [{
-                    data: [4, 3, 4, 2, 2]
-                }]
-            },
-            options: options
-        });
-    });
-</script>
+<script src="js/custom.js"></script>
 
 </html>

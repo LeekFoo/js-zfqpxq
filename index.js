@@ -1,5 +1,5 @@
 // Import stylesheets
-import './style.css';
+import './css/style.css';
 
 // TODO スクロールを始めたらナビゲーションバーを半透明にする
 
