@@ -27,4 +27,13 @@ var options = {
 $( document ).ready(function() {
     $('.sidenav').sidenav();
     $('.collapsible').collapsible();
+
+    $('a[href^="#"]').click(function() {
+        var speed = 1000;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var offset = $("nav").height();
+        var position = target.offset().top + offset;
+        $('body,html').animate({scrollTop:position}, speed, 'easeInCubic');
+    });
 });

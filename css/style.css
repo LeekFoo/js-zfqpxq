@@ -116,12 +116,14 @@ ul.sidenav {
 
 /**** profile ****/
 
-  #about {
-    background-color: rgba(1, 1, 1, 0.5);
+#about,
+#portfolio,
+#portfolio_skill {
+    background-color: rgba(1, 1, 1, 0.4);
     padding: 20px 10px;
-    /* margin: 20px; */
+    margin: 50px 0;
     /* border-radius: 5px; */
-  }
+}
 
 #profile_image {
     float: left;
