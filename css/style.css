@@ -2,7 +2,47 @@
 /**** Common ****/
 
 body {
-  font-family: 'M PLUS 1p', ‘ヒラギノ角ゴシック’, ‘メイリオ’ , sans-serif;
+  font-family: 'Kosugi Maru', ‘ヒラギノ角ゴシック’, ‘メイリオ’ , sans-serif;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
 }
 
 #scroll_top {
@@ -31,15 +71,15 @@ body {
 }
 
 #skill_set_content .frontend_skill .skill_bar {
-    background-color: #ff0000;
+    background-color:#ffa07a;
 }
 
 #skill_set_content .backend_skill .skill_bar {
-    background-color: #00ff00;
+    background-color: #5f9ea0;
 }
 
 #skill_set_content .other_skill .skill_bar {
-    background-color: #1100ff;
+    background-color: #66cdaa;
 }
 
 /**** nav_bar ****/
@@ -117,7 +157,7 @@ ul.sidenav {
 /**** profile ****/
 
 #about,
-#portfolio,
+#portfolio_product,
 #portfolio_skill {
     background-color: rgba(1, 1, 1, 0.4);
     padding: 20px 10px;
@@ -125,18 +165,38 @@ ul.sidenav {
     /* border-radius: 5px; */
 }
 
-#profile_image {
-    float: left;
-    margin-right: 10px;
-}
-
 #profile_image img {
-  min-width: 100px;
-  min-height: 100px;
+  max-width: 250px;
 }
 
-#profile p {
-  overflow: hidden;
+.portfolio_site {
+    margin: 20px auto;
+}
+
+.portfolio_site .site_image {
+    /* overflow: hidden; */
+}
+
+.portfolio_site .site_image img {
+    -moz-transition: -moz-transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s linear;
+    -o-transition: -o-transform 0.3s linear;
+    -ms-transition: -ms-transform 0.3s linear;
+    transition: transform 0.3s linear;
+}
+
+.portfolio_site .site_image img:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 1px 1px 12px rgba(0,0,0,.4);
+}
+
+.portfolio_site_about {
+    padding: 10px;
 }
 
 /**** contact ****/
@@ -151,17 +211,7 @@ ul.sidenav {
 }
 
 @media screen and (max-width:768px) {
-    #profile_image {
-        text-align: center;
-        float: none;
-        margin-right: 0;
-    }
+    .about_profile {
 
-    #profile p {
-        overflow: inherit;
-    }
-
-    #skill_set_content canvas {
-        min-height: 150px;
     }
 }

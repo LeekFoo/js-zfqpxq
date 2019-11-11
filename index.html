@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -23,14 +23,14 @@
 						<li><a href="#">TOP</a></li>
 						<li><a href="#about">このサイトについて</a></li>
 						<li class="dropdown">
-							<a href="#portfolio">ポートフォリオ</a>
+							<a href="#portfolio_product">ポートフォリオ</a>
 							<ul id="dropdown1" class="dropdown-list">
+                                <li><a href="#portfolio_product">制作物</a></li>
 								<li><a href="#portfolio_skill">スキル</a></li>
 								<li><a href="#!">two</a></li>
-								<li><a href="#!">three</a></li>
 							</ul>
 						</li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#contact">連絡先</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -39,16 +39,16 @@
 			<li><a href="#">TOP</a></li>
 			<li><a href="#about">このサイトについて</a></li>
 			<li>
-				<a class="collapsible-header">ポートフォリオ<i class="material-icons right">arrow_drop_down</i></a>
+				<a class="collapsible-header">ポートフォリオ<i class="fas fa-caret-down right"></i></a>
 				<div class="collapsible-body">
 					<ul>
+                        <li><a href="#portfolio_product">制作物</a></li>
 						<li><a href="#skill_set_content">スキル</a></li>
 						<li><a href="#!">two</a></li>
-						<li><a href="#!">three</a></li>
 					</ul>
 				</div>
 			</li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#contact">連絡先</a></li>
 		</ul>
 	</header>
 
@@ -63,30 +63,49 @@
 		</div>
 		<div id="about" class="section valign-wrapper" data-aos="fade-up">
 			<div class="container">
-				<div class="row">
-					<div id="profile">
-						<h3 class="center-align">Profile</h3>
-                        <div id="profile_image"><img href="hogehoge.png"></div>
-						<p>
-							LeekFooと申します。<br>
+                <div id="profile">
+                    <h3 class="center-align">Profile</h3>
+                    <div class="about_profile row valign-wrapper">
+                        <div id="profile_image" class="center-align col s12 m4">
+                            <img class="circle" alt="プロフィール画像" src="img/profile.png">
+                        </div>
+                        <div class="col s12 m8 mt20">
+                            LeekFooと申します。<br>
                             これまで約3年間Web業界でWebエンジニアとして勤務し、LAMP環境で動作するWebアプリケーションやソーシャルゲームの開発を行ってきました。<br>
                             仕事ではPHPを使用することが多いですが、最近は競技プログラミングを始め、C++の勉強もしています。
-                        </p>
-					</div>
-					<div id="profile_like">
-						<div class="likes col s6">aaaa</div>
-						<div class="likes col s6">aaaa</div>
-					</div>
-				</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile_like">
+                    <div class="row">
+                        <div class="likes col s6">aaaa</div>
+                        <div class="likes col s6">aaaa</div>
+                    </div>
+                </div>
 			</div>
 		</div>
 
-        <div id="portfolio" class="section valign-wrapper" data-aos="fade-up">
+        <div id="portfolio_product" class="section valign-wrapper" data-aos="fade-up">
 			<div class="container">
-				<h3 class="center-align">Portfolio</h3>
+				<h3 class="center-align">制作物</h3>
                 <div class="row">
-					<div id="profile">
-
+					<div class="portfolio_site col s12 m4">
+                        <div class="site_image center-align"><img class="responsive-img" data-target="modal1" src="img/kari.jpg"></div>
+                        <div class="portfolio_site_about">
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </div>
+					</div>
+                    <div class="portfolio_site col s12 m4">
+                        <div class="site_image center-align"><img class="responsive-img" src="img/kari.jpg"></div>
+                        <div class="portfolio_site_about">
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </div>
+					</div>
+                    <div class="portfolio_site col s12 m4">
+                        <div class="site_image center-align"><img class="responsive-img" src="img/kari.jpg"></div>
+                        <div class="portfolio_site_about">
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -95,7 +114,7 @@
 		<div id="portfolio_skill" class="section valign-wrapper" data-aos="fade-up">
 			<div class="container">
                 <div id="skill_set_content">
-                    <h3 class="center-align">Skill</h3>
+                    <h3 class="center-align">スキル</h3>
                     <div class="row">
                         <div class="frontend_skill col s12 m6">
                             <h4>Frontend</h4>
@@ -202,7 +221,7 @@
 		</div>
 	</article>
 	<footer>
-		<div id="contact" class="section valign-wrapper center-align teal lighten-3" data-aos="fade-up">
+		<div id="contact" class="section valign-wrapper center-align teal lighten-3">
 			<div class="container">
 				<h3>連絡先</h3>
 				<p>
