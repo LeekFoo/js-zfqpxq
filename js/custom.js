@@ -27,6 +27,7 @@ var options = {
 $( document ).ready(function() {
     $('.sidenav').sidenav();
     $('.collapsible').collapsible();
+    $('.modal').modal();
 
     $('a[href^="#"]').click(function() {
         var speed = 600;
