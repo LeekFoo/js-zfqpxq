@@ -39,20 +39,33 @@ body {
     max-height: 90%; 
 }
 
-.modal-content h4 {
+.modal-content h4,
+.modal-content h5 {
     position: relative;
     font-size: 25px;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     padding-left: 10px;
+    padding-bottom: 5px;
+    border-bottom: double;
 }
 
-.modal-content h4:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  border-bottom: double;
+.modal-content h5 {
+    font-size: 15px;
+    font-size: 1.5rem;
+}
+
+.modal_thums {
+    text-align: center;
+}
+
+.modal_thums li {
+    display: inline-block;
+    width: 25%;
+}
+
+.modal_thums li img {
+    width: 100%;
 }
 
 .modal-close {
@@ -185,7 +198,7 @@ ul.sidenav {
 }
 
 #profile_image img {
-  max-width: 250px;
+  /* max-width: 250px; */
 }
 
 .portfolio_site {

@@ -4,34 +4,16 @@ AOS.init({
     once: true,
 });
 
-var options = {
-    responsive: true,
-    title: {
-        display: true,
-        text: 'フロントエンド'
-    },
-    legend: {
-        display: false
-    },
-    scale: {
-        angleLines: {
-            display: false
-        },
-        ticks: {
-            suggestedMin: 1,
-            suggestedMax: 5
-        }
-    }
-};
-
 $( document ).ready(function() {
     // initialize
     $('.sidenav').sidenav();
     $('.collapsible').collapsible();
-    $('.modal').modal();
+    $('.modal').modal({
+        // endingTop: '5%'
+    });
 
     // ページトップへ戻るボタン
-    var pagetop = $('.scroll_button');   
+    const pagetop = $('.scroll_button');   
     pagetop.hide();
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -49,17 +31,30 @@ $( document ).ready(function() {
 
     // スクロールアニメーション
     $('a[href^="#"]').click(function() {
-        var speed = 600;
-        var href= $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var offset = href == "#" ? 0 : $("nav").height();
-        var position = target.offset().top - offset;
+        const speed = 600;
+        const href= $(this).attr("href");
+        const target = $(href == "#" || href == "" ? 'html' : href);
+        const offset = href == "#" ? 0 : $("nav").height();
+        const position = target.offset().top - offset;
         $('body,html').animate({scrollTop:position}, speed, 'easeInCubic');
     });
 
 
     $('.modal-trigger').click(function() {
-        var targetName = $(this).attr('data-target');
-        $('#' + targetName + ' .modal_images').slick();
+        const targetName = '#' + $(this).attr('data-target');
+        $(targetName + ' .modal_images').slick({
+            dots:true,
+            // asNavFor: targetName + ' .modal_thumbs',
+            customPaging: function(slick,index) {
+                var targetImage = slick.$slides.eq(index).find('img').attr('src');
+                return '<img src=" ' + targetImage + ' "/>';
+            }
+        });
+
+        // $(targetName + ' .modal_thumbs').slick({
+        //     slidesToShow: 3,
+        //     asNavFor: targetName + ' .modal_images',
+        // });
+        
     });
 });

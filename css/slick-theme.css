@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 45%;
 
     display: block;
 
@@ -71,7 +71,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: #000;
+    color: #26a69a;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -89,11 +89,15 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    font-family: "Font Awesome 5 Free";
+    content: '\f137';
+    font-weight: 900;
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    font-family: "Font Awesome 5 Free";
+    content: '\f138';
+    font-weight: 900;
 }
 
 .slick-next
@@ -107,7 +111,9 @@
 }
 .slick-next:before
 {
-    content: '→';
+    font-family: "Font Awesome 5 Free";
+    content: '\f138';
+    font-weight: 900;
 }
 [dir='rtl'] .slick-next:before
 {
@@ -122,9 +128,8 @@
 
 .slick-dots
 {
-    position: absolute;
-    bottom: -25px;
-
+    /* position: absolute;
+    bottom: -100px; */
     display: block;
 
     width: 100%;
@@ -141,8 +146,8 @@
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    /* width: 20px;
+    height: 20px; */
     margin: 0 5px;
     padding: 0;
 
@@ -203,3 +208,26 @@
     opacity: .75;
     color: black;
 }
+
+.slick-dots li {
+    list-style: none;
+    display: inline-block;
+    max-width: 112px;
+    max-height: 56px;
+    width: 15%;
+    margin: 5px;
+}
+
+.slick-dots li img {
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+}
+
+.slick-dots li.slick-active img {
+    opacity: 1;
+}
+
+
+
+
