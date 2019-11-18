@@ -4,7 +4,9 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="WebプログラマのLeekFooのポートフォリオサイトです。">
+    <meta name="description" content="Webプログラマ LeekFooのポートフォリオサイトです。">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
 	<title>LeekFoo's Portfolio</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
@@ -31,7 +33,9 @@
 		<div id="nav_bar" class="navbar-fixed">
 			<nav>
 				<div class="nav-wrapper container">
-					<a href="#" class="brand-logo">Logo</a>
+					<a href="#" class="brand-logo">
+                        <img src="img/logo.png" alt="サイトロゴ" />
+                    </a>
 					<a href="" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="#">TOP</a></li>
@@ -245,15 +249,15 @@
                             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         </div>
 					</div> -->
-                    <div class="col s12 m4">
+                    <div class="col s12 m4 offset-m4">
                         <div class="card hoverable modal-trigger" data-target="product_1">
                             <div class="card-image">
-                                <img src="img/kari.jpg" />
+                                <img src="img/projects/01/pc.png" />
                                 <span class="card-title">Portfolio</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m4">
+                    <!-- <div class="col s12 m4">
                         <div class="card hoverable">
                             <div class="card-image">
                                 <img src="img/kari.jpg" />
@@ -268,7 +272,7 @@
                                 <span class="card-title">Card Title</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 				</div>
 			</div>
 		</div>
@@ -280,10 +284,12 @@
                     <div class="col s12 m5">
                         <h4>Portfolio</h4>
                         <div class="description mb30">
-                            自分自身のポートフォリオです。<br>
+                            このWebページになります。<br>
+                            これまでの仕事でCSSフレームワークはBootstrapを主に使用していましたが、マテリアルデザインに特化した「Materialize」を使用して構築しました。<br>
+                            もっと動きのあるページにし、見ていて楽しいページにしていきたいと考えております。
                             <ul>
-                                <li><a href="https://leekfoo.github.io/portfolio/"><i class="fas fa-desktop"></i>Demo</a></li>
-                                <li><a href="https://github.com/LeekFoo/portfolio"><i class="fab fa-github"></i>github</a></li>
+                                <li><a href="https://leekfoo.github.io/portfolio/" target="_blank"><i class="fas fa-desktop"></i>Demo</a></li>
+                                <li><a href="https://github.com/LeekFoo/portfolio" target="_blank"><i class="fab fa-github"></i>github</a></li>
                             </ul>
                         </div>
                         <h5>開発環境</h5>
@@ -292,18 +298,17 @@
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript(jQuery)</li>
-                                <li>MaterializeCSS</li>
+                                <li>Materialize</li>
                                 <li>AOS</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col s12 m7">
                         <ul class="modal_images">
-                            <li><img src="img/kari.jpg" /></li>
-                            <li><img src="img/kari.jpg" /></li>
-                            <li><img src="img/kari.jpg" /></li>
-                            <li><img src="img/kari.jpg" /></li>
-                            <li><img src="img/kari.jpg" /></li>
+                            <li><img src="img/projects/01/pc.png" /></li>
+                            <li><img src="img/projects/01/top.png" /></li>
+                            <li><img src="img/projects/01/profile.png" /></li>
+                            <li><img src="img/projects/01/sp.png" /></li>
                         </ul>
                     </div>
                 </div>
