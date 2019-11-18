@@ -13,7 +13,7 @@ $( document ).ready(function() {
     });
 
     // ページトップへ戻るボタン
-    const pagetop = $('.scroll_button');   
+    const pagetop = $('.scroll_button');
     pagetop.hide();
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -25,7 +25,7 @@ $( document ).ready(function() {
     pagetop.click(function () {
         $('body,html').animate({
             scrollTop: 0
-        }, 500); 
+        }, 500);
         return false;
     });
 
@@ -50,11 +50,34 @@ $( document ).ready(function() {
                 return '<img src=" ' + targetImage + ' "/>';
             }
         });
+    });
 
-        // $(targetName + ' .modal_thumbs').slick({
-        //     slidesToShow: 3,
-        //     asNavFor: targetName + ' .modal_images',
-        // });
-        
+    anime.timeline({
+        easing: 'easeInOutSine',
+    })
+    .add({
+        targets: '.line_draw .lines path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        // easing: 'easeInOutSine',
+        duration: 1000,
+        delay: function(el, i) { return i * 500 },
+        direction: 'alternate',
+        loop: false,
+    })
+    .add({
+        targets: '.line_draw .lines path',
+        duration: 500,
+        fill: '#fff',
+        begin: function() {
+            $(".line_draw .lines path").css('stroke', 'transparent');
+        }
+    })
+    .add({
+        targets: '#top_title h5',
+        duration: 500,
+        opacity: 500,
+        begin: function() {
+            $("#top_title h5").css('visibility', 'visible');
+        }
     });
 });

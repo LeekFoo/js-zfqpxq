@@ -45,7 +45,7 @@ i.fab {
 
 .modal {
     width: 80%;
-    max-height: 90%; 
+    max-height: 90%;
 }
 
 .modal-content h4,
@@ -202,6 +202,20 @@ ul.sidenav {
   color: #fff;
 }
 
+#title_svg {
+  width: 100%;
+}
+
+.st0 {
+  fill: transparent;
+  stroke-width: 1px;
+  stroke: #fff;
+}
+
+#top_title h5 {
+    visibility: hidden
+}
+
 /**** profile ****/
 
 #about,
@@ -245,6 +259,10 @@ ul.sidenav {
 
 .portfolio_site_about {
     padding: 10px;
+}
+
+.profile_account {
+    color: #fff;
 }
 
 /**** contact ****/
