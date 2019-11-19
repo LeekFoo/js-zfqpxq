@@ -120,12 +120,12 @@ i.fab {
     padding: 0;
     border-radius: 5px;
     /* background-color: #ccc; */
-    border: solid #ddd;
+    border: solid #fff;
 }
 
 #skill_set_content .skill_bar_wrap .skill_bar {
     /* background-color: #ECECEC; */
-    background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #dddddd), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #dddddd),color-stop(.75, #dddddd), color-stop(.75, transparent),to(transparent));
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #fff), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #fff),color-stop(.75, #fff), color-stop(.75, transparent),to(transparent));
     -webkit-background-size: 7px 7px;
     height: 100%;
     /* border-radius: 5px; */
@@ -232,7 +232,7 @@ ul.sidenav {
 #about,
 #portfolio_projects,
 #portfolio_skill {
-    background-color: rgba(1, 1, 1, 0.4);
+    background-color: rgba(1, 1, 1, 0.25);
     padding: 20px 10px;
     margin: 64px 0;
     /* border-radius: 5px; */
